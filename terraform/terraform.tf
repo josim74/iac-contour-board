@@ -27,7 +27,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "gitopsterrastate"
+    bucket = "contour-iac-s3"
     key    = "terraform.tfstate"
     region = "us-east-2"
   }
