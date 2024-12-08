@@ -1,11 +1,10 @@
 name: 'Terraform AWS EKS'
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - main
-      - staging
+      - stage
     paths:
       - 'terraform/**'
   pull_request:
