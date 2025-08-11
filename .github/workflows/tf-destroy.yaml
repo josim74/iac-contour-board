@@ -37,7 +37,7 @@ jobs:
                 kubectl get nodes
                 kubectl cluster-info
       
-            - name: Install Contour Ingress Controller
+            - name: Delete Ingress Controller
               if: steps.kubeconfig.outcome == 'success'
               run: |
                 kubectl delete -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.12.0-beta.0/deploy/static/provider/aws/deploy.yaml
